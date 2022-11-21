@@ -6,16 +6,11 @@ package org.example.aspectLog;
  */
 public class OperateLogDO {
 
-    private Long id;
     private String desc;
     private Long rankId;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
+    public OperateLogDO(Long rankId) {
+        this.rankId = rankId;
     }
 
     public String getDesc() {
@@ -37,8 +32,7 @@ public class OperateLogDO {
     @Override
     public String toString() {
         return "OperateLogDO{" +
-                "id=" + id +
-                ", desc='" + desc + '\'' +
+                "desc='" + desc + '\'' +
                 ", rankId=" + rankId +
                 '}';
     }

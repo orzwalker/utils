@@ -1,8 +1,6 @@
 package org.example;
 
 import org.example.aspectLog.RankService;
-import org.example.aspectLog.SaveRank;
-import org.example.aspectLog.UpdateRank;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

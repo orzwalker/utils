@@ -1,10 +1,8 @@
 package org.example.aspectLog;
 
-import org.apache.commons.lang3.RandomUtils;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.stereotype.Component;
@@ -44,7 +42,6 @@ public class RecordLogAspect {
                 Convert instance = convert.newInstance();
                 // 只处理第一个参数
                 OperateLogDO domain = instance.convert(pjp.getArgs()[0]);
-                domain.setId(RandomUtils.nextLong());
                 domain.setDesc(annotation.desc());
 
                 // 保存日志
