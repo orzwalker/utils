@@ -1,0 +1,7 @@
+server:
+  port: 1122
+
+spring:
+  application:
+    name: utils
+
