@@ -33,7 +33,11 @@ public class RecordLogAspect {
 
     @Around("pointcut()")
     public Object around(ProceedingJoinPoint pjp) throws Throwable {
+        // 先执行业务逻辑
         Object proceed = pjp.proceed();
+
+        // 业务逻辑执行成功后，才记录日志
+        // 无法保证严格一致性，需要考虑MQ等
         threadPoolExecutor.execute(() -> {
             try {
                 MethodSignature methodSignature = (MethodSignature) pjp.getSignature();
