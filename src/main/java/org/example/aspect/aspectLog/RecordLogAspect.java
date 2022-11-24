@@ -1,4 +1,4 @@
-package org.example.aspectLog;
+package org.example.aspect.aspectLog;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -27,7 +27,7 @@ public class RecordLogAspect {
             new LinkedBlockingQueue<>(100));
 
 
-    @Pointcut("@annotation(org.example.aspectLog.RecordLog)")
+    @Pointcut("@annotation(org.example.aspect.aspectLog.RecordLog)")
     public void pointcut() {
     }
 

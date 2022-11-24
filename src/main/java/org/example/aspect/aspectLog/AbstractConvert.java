@@ -1,4 +1,4 @@
-package org.example.aspectLog;
+package org.example.aspect.aspectLog;
 
 import org.apache.commons.lang3.RandomUtils;
 

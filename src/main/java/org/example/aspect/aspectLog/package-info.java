@@ -10,4 +10,4 @@
  * @author walker
  * @since 2022/11/21 11:25
  */
-package org.example.aspectLog;
+package org.example.aspect.aspectLog;

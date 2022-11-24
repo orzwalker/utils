@@ -1,4 +1,4 @@
-package org.example.aspectLog;
+package org.example.aspect.aspectLog;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;

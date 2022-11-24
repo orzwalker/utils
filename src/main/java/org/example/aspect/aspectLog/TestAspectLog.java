@@ -1,4 +1,4 @@
-package org.example.aspectLog;
+package org.example.aspect.aspectLog;
 
 import org.example.Config;
 import org.springframework.context.ApplicationContext;
